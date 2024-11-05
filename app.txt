@@ -7,3 +7,4 @@ git을 잘 써서 형상관리를 해보자
 리액트 프로젝트도 git으로 관리하자
 행복하다
 .git 폴더는 로컬 repository(저장소)라고보면 된다
+git branch -M main 에서 main은 로컬 브랜치이다
