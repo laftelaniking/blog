@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  let post = '강남 우동 맛집';
+  let post = '청량리 우동 맛집';
   let [title, b] = useState('남자 코트 추천')     //b는 state 변경을 도와주는 함수
   // alert(useState('남자코드추천'))
   //distructuring 문법 
