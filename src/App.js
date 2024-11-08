@@ -16,6 +16,7 @@ function App() {
       <div className="black-nav">
         <h4>Blog</h4>
       </div>
+
       <button onClick={() => {
         let copy = [...title]
         copy.sort();
@@ -27,11 +28,10 @@ function App() {
         copy[0] = '여자코트추천';
         titlechange(copy)
       }}>글수정</button>
+
       <div className='list'>
-        {/* <span onClick={() => {b(['남자 코트 추천', '여자 코트 추천', '침착맨 코트 추천'])}}>👩🏼‍🤝‍🧑🏻</span> */}
          <h4> {title[0]} <span onClick={() => {up(likes + 1)}}>👍</span> {likes} </h4>   {/* 데이터 바인딩 */}
          <p>2월 17일 발행</p>
-         
       </div>   
       <div className='list'>
          <h4> {title[1]} </h4>   
@@ -42,8 +42,22 @@ function App() {
          <p>2월 17일 발행</p>
       </div>
 
+      <Modal></Modal>
+
     </div>
   );
+}
+
+function Modal(){
+  return(
+    <div className='modal'>
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  )
+  
+  
 }
 
 export default App;
